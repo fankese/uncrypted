@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 성공</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .text {
+            font-size: 48px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>로그인 성공!</h2>
+        <!-- 이미지 표시 -->
+        <img id="successImage" src="안아줘요.png" alt="로그인 성공 이미지">
+        <!-- 메시지 표시 -->
+        <p class="text">🗿</p>
+    </div>
+
+    <audio id="vineBoomSound" src="vineboom.mp3"></audio>
+
+    <script>
+        // 이미지 클릭 시 사운드 재생
+        document.getElementById("successImage").addEventListener("click", function () {
+            const sound = document.getElementById("vineBoomSound");
+            sound.play();
+        });
+    </script>
+
+</body>
+
+</html>
